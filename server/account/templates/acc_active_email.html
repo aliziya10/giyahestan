@@ -1,0 +1,5 @@
+{% autoescape off %}
+سلام{{ user.username }},
+برای فعال سازی ایمیل در گیاهستان روی لینک زیر کلیک کنید
+http://{{ domain }}{% url 'account:activate' uidb64=uid token=token %}
+{% endautoescape %}

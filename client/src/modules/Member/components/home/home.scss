@@ -1,0 +1,117 @@
+@import '../../../../core/style/theme';
+
+
+.home {
+
+
+  .similar-plant {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .similar-plant__title {
+    flex: 100%;
+    @include text(20px, 200, 1, map_get($color, black-oltra-light))
+  }
+
+  .similar-plant__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #8e8e8e8e;
+    border-radius: 5px;
+    padding: 1px 4px 15px;
+    width: 15%;
+    box-shadow: 0 0 7px 0 #dfdfdf;
+    cursor: pointer;
+  }
+
+  .similar-plant__item:hover {
+    box-shadow: inset 0 0 3px 0 #dfdfdf;
+  }
+
+  .similar-plant__ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+
+  .similar-plant__ribbon {
+    color: #dcdcdc;
+    background-color: #0d29e0;
+    text-align: center;
+    padding: 3px 0;
+    width: 120px;
+    margin-top: 4px;
+    @include transform(rotate(-45deg));
+  }
+
+  .ribbon-green:before, .ribbon-green:after {
+    content: "";
+    border-top: 3px solid #6e8900;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px;
+  }
+
+  .similar-plant__image {
+    height: 12vw;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+
+  .similar-plant__score i {
+    color: gold;
+  }
+
+  .similar-plant__score i.fa-star-half-stroke {
+    color: gold;
+    transform: scale(-1, 1);
+  }
+
+  .similar-plant__name {
+    margin-top: 15px;
+    @include text(13px, 300);
+  }
+
+  .similar-plant__item:hover {
+    transition: transform .3s linear;
+    transform: perspective(500px) translateZ(30px);
+  }
+
+  .first-section {
+    text-align: center;
+    h2 {
+      font-size: 35px;
+      line-height: 3;
+      color: #07a807;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .board {
+    margin: auto;
+    width: 98vw;
+    height: 300px;
+    background: linear-gradient(45deg, #f53803, #f5d020);
+    border-radius: 5px;
+    color: #252525;
+    box-shadow: inset 0 0 9px 1px #0000008a;
+    p {
+      text-align: center;
+      font-size: 25px;
+      line-height: 11;
+    }
+  }
+
+}

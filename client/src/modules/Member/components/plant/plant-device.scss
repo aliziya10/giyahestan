@@ -1,0 +1,55 @@
+@media only screen and (max-width: 450px) {
+  .plant {
+    display: block;
+
+    .more {
+      position: fixed;
+    }
+
+    .image {
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    .image__poster {
+      width: 70vw;
+      margin-bottom: 0;
+    }
+
+    .image__slide {
+      width: 20vw;
+      height: 18vw;
+    }
+
+    .image__sliders {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .about {
+      display: block;
+      padding-left: 0;
+    }
+
+    .about__name {
+      //text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .about__badge,
+    .about__score {
+      margin: 10px 0;
+      display: inline-block;
+      width: 50%;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+.plant {
+.section-1 {
+  display: grid;
+}
+}
+}

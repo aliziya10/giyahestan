@@ -1,0 +1,58 @@
+@import '../core/style/theme';
+@import '../core/style/imports';
+
+* {
+  font: normal 15px samim;
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ccc;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #666;
+  }
+}
+
+body {
+  direction: rtl;
+  margin: 0;
+  color: map_get($color, text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 1.3em;
+  color: #373737;
+  vertical-align: middle;
+}
+
+i.fa-solid,
+i.fa-regular, {
+  font-size: 20px;
+}
+
+input:focus,
+input:valid {
+  outline: none;
+}
+
+.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+@media only screen and (min-width: 1280px) {
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
+}

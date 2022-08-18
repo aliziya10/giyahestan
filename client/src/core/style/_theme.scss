@@ -1,0 +1,58 @@
+$color: (
+        black: black,
+        balck-light: #111111,
+        text-color: #222222,
+        black-oltra-light: #444444,
+        gray_: #6e6e6e,
+        text-disable: #888888,
+        background: #dddddd,
+        white: white,
+        currect: #1ce32ade,
+        submit: #07d615de,
+        error: #dc0707,
+);
+
+@mixin text($size: 15px, $weight: normal, $line: 1, $color: map_get($color, text-color), $dealingLong: false) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+  color: $color;
+}
+
+@mixin textOverflow() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin transform($value) {
+  transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  -moz-transform: $value;
+  -webkit-transform: $value;
+}
+
+//@mixin image($width, $round: false) {  todo::
+//  width: $width;
+//  height: $width;
+//  object-fit: cover;
+//  @if $round {
+//    border-radius: 100%;
+//  }
+//}
+
+@mixin animation($animation) {
+  animation: $animation;
+  -o-animation: $animation;
+  -moz-animation: $animation;
+  -webkit-animation: $animation;
+}
+
+.disable {
+  cursor: not-allowed;
+}
+
+.ltr {
+  direction: ltr;
+}
