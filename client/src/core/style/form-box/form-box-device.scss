@@ -1,0 +1,23 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 426px) {
+  .form-box {
+    width: 70vw;
+    padding: 0 10vw 30px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 426px) and (max-width: 769px) {
+  .form-box {
+    width: 200px;
+    padding: 0 40px 30px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 769px) {
+  .form-box {
+    width: 270px;
+    padding: 0 4vw 40px;
+  }
+}

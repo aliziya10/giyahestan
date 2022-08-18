@@ -1,0 +1,15 @@
+@import '../theme';
+
+.form-box {
+  display: inline-block;
+  margin: auto;              // margin-top in any page
+  border-radius: 5px;
+  box-shadow: 0 0 9px 4px rgb(29 29 29 / 47%);
+}
+
+.form-box__title {
+  line-height: 3;
+  font-size: 19px;
+  font-weight: 500;
+  color: map_get($color, black);
+}

@@ -1,0 +1,16 @@
+{%block body%}
+    <form class="site-form" action="{%url 'account:singup'%}">
+        {% csrf_token %}
+        <input type="submit" value="SINGUP"/>
+    </form>
+
+    <form class="site-form" action="{%url 'account:login'%}">
+        {% csrf_token %}
+        <input type="submit" value="LOGIN"/>
+    </form>
+
+
+
+{#        <button type="button" onclick="location.href='{%url 'account:singup'%}'">Click Me!</button>#}
+
+{% endblock %}

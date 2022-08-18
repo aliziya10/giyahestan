@@ -1,0 +1,44 @@
+@import '../../../../core/style/theme';
+
+.sign-up {
+  text-align: center;
+
+  .sign-up__background {
+    height: 100vh;
+    width: 100vw;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .form-box {
+    position: relative;
+    background: rgb(177 177 177 / 59%);
+  }
+
+  .sign-up__forget-password {
+    border-bottom: 1px dotted;
+    color: #0002a3;
+  }
+
+  [class^="button-"]{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 4px;
+  }
+
+  .sign-up__back {
+    position: absolute;
+    left: 23px;
+    top: 18px;
+    cursor: pointer;
+    transition: all .2s linear;
+  }
+  .sign-up__back:hover{
+    //color: #151515;
+    left: 19px;
+    padding-right: 4px;
+  }
+}
