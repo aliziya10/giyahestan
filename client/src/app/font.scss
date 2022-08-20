@@ -1,0 +1,29 @@
+@font-face {
+  font-family: samim;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/samim/Farsi-Digits/Samim-FD.eot');
+  src: url('../assets/fonts/samim/Farsi-Digits/Samim-FD.eot?#iefix') format('FontName-opentype'),
+  url('../assets/fonts/samim/Farsi-Digits/Samim-FD.woff') format('woff'),
+  url('../assets/fonts/samim/Farsi-Digits/Samim-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: samim;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/samim/Farsi-Digits/Samim-Bold-FD.eot');
+  src: url('../assets/fonts/samim/Farsi-Digits/Samim-Bold-FD.eot?#iefix') format('FontName-opentype'),
+  url('../assets/fonts/samim/Farsi-Digits/Samim-Bold-FD.woff') format('woff'),
+  url('../assets/fonts/samim/Farsi-Digits/Samim-Bold-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: samim-without-number;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/samim/Samim.eot');
+  src: url('../assets/fonts/samim/Samim.eot?#iefix') format('FontName-opentype'),
+  url('../assets/fonts/samim/Samim.woff') format('woff'),
+  url('../assets/fonts/samim/Samim.ttf') format('truetype');
+}

@@ -1,0 +1,84 @@
+@import '../../core/style/theme';
+
+
+.field {
+  width: 100%;
+
+  .field_type_input {
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 22px 0 60px;
+  }
+
+  .field_type_input > *:not(.filed__box) {
+    flex: 1;
+  }
+
+  .filed__box {
+    position: relative;
+    width: 0;
+    flex: 4;
+  }
+
+  .field__label,
+  .field__underline,
+  .field__description {
+    position: absolute;
+    margin: 0;
+  }
+
+  .field__label {
+    font-size: 11px;
+    top: -11px;
+    right: 0;
+  }
+
+  .field__self,
+  .field__self:focus-visible {
+    border: none;
+    outline: none;
+    background: #ffffff00;
+  }
+
+  .field__underline {
+    background: rgb(219 219 219 / 83%);
+    border: 1px solid #949494d6;
+    border-radius: 26px;
+    height: 1px;
+    width: 103%;
+    top: 27px;
+  }
+
+  .field__description {
+    font-size: 11px;
+    right: -8px;
+    top: 36px;
+  }
+
+  .icon-spinner2 {
+    @include animation(field_loading_turn .5s infinite linear);
+  }
+
+  i.fa-check,
+  .field__description_status_2 {
+    color: map_get($color, currect);
+  }
+
+  i.fa-xmark,
+  .field__description_status_3 {
+    color: map_get($color, error);
+
+  }
+
+  @keyframes field_loading_turn {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+}

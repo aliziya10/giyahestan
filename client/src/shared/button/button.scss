@@ -1,0 +1,18 @@
+@import '../../core/style/theme';
+
+.button-primary {
+  border-radius: 3px;
+  border: 1px solid rgb(0 88 6 / 80%);
+  background: map_get($color, submit);
+  padding: 6px 3px;
+  color: #012804;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.button-disabled {
+  border-radius: 3px;
+  background: rgb(255 255 255 / 39%);
+  padding: 6px 3px;
+  color: map_get($color, gray_);
+}
